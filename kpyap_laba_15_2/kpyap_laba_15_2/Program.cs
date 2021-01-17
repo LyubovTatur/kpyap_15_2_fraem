@@ -39,7 +39,7 @@ namespace kpyap_laba_15_2
                     case "2":
                         {
                             Game game = LoadGame();
-                            game.Notify += DisplayMessage;
+                            //game.Notify += DisplayMessage;
                             Gameplay(game);
                             break;
                         }
@@ -72,6 +72,7 @@ namespace kpyap_laba_15_2
                     Console.WriteLine("2. Снять мерки (-15 очков, посетителей х 1.25)");
                     Console.WriteLine("3. Сшить костюмы (-20 очков\\костюм за пошив, +50 очков\\костюм за продажу)");
                     Console.WriteLine("4. Завершить ход.");
+                    Console.WriteLine("5. Сохранить игру.");
                     string choice;
                     choice = Console.ReadLine();
                     switch (choice)
@@ -89,6 +90,9 @@ namespace kpyap_laba_15_2
                             break;
                         case "4":
                             Step = false;
+                            break;
+                        case "5":
+                            game.SaveGame();
                             break;
                         default:
                             break;

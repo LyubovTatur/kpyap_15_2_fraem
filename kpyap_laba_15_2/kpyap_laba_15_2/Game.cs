@@ -31,7 +31,7 @@ namespace kpyap_laba_15_2
         {
             this.points = startPoints;
             this.visitorsPerDay = visitorsPerDay;
-            this.remainingMoves = movesCount;
+            this.remainingMoves = movesCount+1;//эт для ппервого плюс один
             this.pointsToWin = pointsToWin;
         }
         public void Ad()
