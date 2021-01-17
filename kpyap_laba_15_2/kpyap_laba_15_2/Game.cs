@@ -100,7 +100,7 @@ namespace kpyap_laba_15_2
                 IsContinue = false;
             }
             Random random = new Random();
-            int boughtСostumes = random.Next(visitorsPerDay);
+            int boughtСostumes = random.Next(visitorsPerDay+1);
             if (boughtСostumes > 0 && costumes > 0)
             {
                 BuyingСostumes(boughtСostumes);
